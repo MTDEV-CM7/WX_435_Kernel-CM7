@@ -1,4 +1,4 @@
-#Android makefile to build kernel as a part of Android Build
+#Android makefile to build kernel as a part of Android Build file
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 
