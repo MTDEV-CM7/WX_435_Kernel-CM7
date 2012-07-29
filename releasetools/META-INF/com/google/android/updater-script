@@ -1,0 +1,8 @@
+ui_print("I say thank you to b_random");
+ui_print("dsmryderKernel CM7 Motorola Triumph Kernel");
+ui_print("and now so should you");
+
+ui_print("Extracting boot image to boot partition...");
+package_extract_file("boot.img", "/dev/block/mmcblk0p5");
+ui_print("dsmryderKernel installed!");
+
