@@ -382,7 +382,7 @@ static long hm0357_set_sensor_mode(int mode)
 //            {
 //                printk(KERN_ERR "hm0356_msg: case ORIENTATION 270 REQUESTED.\n");
             }*/
-/*            if (hm0357info->sensor_Orientation == MSM_CAMERA_SENSOR_ORIENTATION_90) 
+            if (hm0357info->sensor_Orientation == MSM_CAMERA_SENSOR_ORIENTATION_90) 
             {
                 printk(KERN_ERR "hm0356_msg: case ORIENTATION 90 - MIRROR REQUESTED.\n");
 //                hm0357_i2c_write(hm0357_client->addr, 0x0006, 0x80, BYTE_LEN);
@@ -393,7 +393,7 @@ static long hm0357_set_sensor_mode(int mode)
             {
                 printk(KERN_ERR "hm0356_msg: case ORIENTATION 180 REQUESTED.\n");
                 hm0357_i2c_write(hm0357_client->addr, 0x0006, 0x80, BYTE_LEN);
-            }*/
+            }
             if (hm0357info->sensor_Orientation == MSM_CAMERA_SENSOR_ORIENTATION_0) 
             {
                 printk(KERN_ERR "hm0356_msg: case ORIENTATION 0 REQUESTED.\n");
