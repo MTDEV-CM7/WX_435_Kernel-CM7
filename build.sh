@@ -5,18 +5,23 @@
 #package                                          #
 #                                                 #
 #Written by shane87                               #
-#Modified by b_randon14                           #
+#Modified by b_randon14, dsmryder, g60madman      #
 ###################################################
+
+#This part copys the config
+cp config .config
 
 #This part exports the variables needed by the build script in order to build the kernel correctly
 export ARCH=arm
+
 #This is the kernel version that will be appended to the default kernel version
 export KBUILD_BUILD_VERSION="v2.3"
+
 #This is the name that the CWM flashable zip will be named as, MUST END WITH .zip!!
 KERNELZIP_VERSION=dsmryderKernel.zip
 
 #This exports the path to you toolchain, and it currently setup for the linaro 4.6 android toolchain found at www.linaro.org
-export CROSS_COMPILE=/home/`whoami`/kernel/arm-eabi-4.4.0/bin/arm-eabi-
+export CROSS_COMPILE=/home/`whoami`/WX_435_Kernel-CM7/arm-eabi-4.4.0/bin/arm-eabi-
 
 #This section cleans out the build directory to ensure a good build
 make clean
